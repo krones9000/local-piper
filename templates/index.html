@@ -1,0 +1,52 @@
+<!-- 
+    HTML file written by Kieran Currie Rones
+    Date: January 26, 2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include this link above your other stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ConduitITCStd:wght@400;700&display=swap">
+
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{{ url_for('static', filename='js/tts_script.js') }}"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piper</title>
+</head>
+<body>
+    <h1>Piper TTS Web App</h1>
+    <form onsubmit="return false">
+        <label for="text">Enter text to speak:</label>
+        <div class="controls">
+            <button onclick="triggerSpeak()">Speak</button>
+            <button onclick="triggerGenerate()">Generate</button>
+            <button onclick="triggerBoth()">Both</button>
+        </div>
+        <textarea id="text" name="text" required></textarea>
+        <div class="textControls">
+    <button onclick="clearTextBox()">Clear Text Box</button>
+    </div>
+        <label for="voice">Select Voice:</label>
+	<!-- Add "data-onnx" attribute to store the .onnx path -->
+<select id="voice" name="voice" data-onnx="">
+    <!-- Options will be dynamically added here -->
+</select>
+    </form>
+    <div id="ttsStatus"></div>
+    <div id="processingStatus">Waiting for generation.</div>
+    <audio id="audioPlayer" controls style="width: 1200px;">
+        <source id="audioSource" type="audio/wav">
+    </audio>
+    <div class="controls2">
+    <button onclick="stopServer()">Stop Server</button>
+    </div>
+</body>
+</html>
+
+

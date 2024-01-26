@@ -1,0 +1,92 @@
+/*
+    CSS file written by Kieran Currie Rones
+    Date: January 26, 2024
+*/
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body {
+    margin: 10px;
+    font-family: 'ConduitITCStd', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 34px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    min-width: 50%;
+    min-height: 200px;
+    resize: both;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.controls {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textControls {
+    margin-bottom: 20px;
+}
+
+/* Optional: Add some styling to the buttons */
+button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    font-size: 18px;
+}
+
+#audioPlayer {
+    margin-top: 20px;
+    width: 400px;
+}
+
+/* static/styles.css */
+textarea {
+    min-width: 50%;
+    min-height: 200px;
+    resize: both;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 20px; /* Adjust the font size for textarea */
+    background-color: #303030; /* Dark grey background color */
+    color: #ffffff; /* White text color */
+    margin-bottom: 20px; /* Adjust the margin to add space */
+}
+
+#processingStatus {
+    margin-left: 10px; /* Adjust the margin to add space */
+}
+
+.controls2 {
+    margin-top: 400px;
+    margin-bottom: 10px;
+}
+
+/* static/styles.css */
+#voice {
+    width: 300px; /* Adjust the width of the dropdown */
+    font-size: 22px; /* Adjust the font size of the dropdown text */
+    margin-bottom: 22px; /* Add space below the dropdown */
+}
+
+
+#voice option {
+    font-size: 16px; /* Adjust the font size of the dropdown options */
+}
+

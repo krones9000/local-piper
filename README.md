@@ -105,3 +105,4 @@ This project makes use of the following third-party libraries and tools:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
