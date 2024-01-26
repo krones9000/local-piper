@@ -1,6 +1,8 @@
 # local-piper
 A simple program to use piper through a web browser interface. The code is not quite ready for primetime. But you can view a demo below.
 
+local-piper currently only supports Linux. However, I can't code and wrote this using LLMs so have at it. I'm sure you can figure it out!
+
 [![Click here to view a demo on YouTube.](https://img.youtube.com/vi/Ym2KmWeqd84/0.jpg)](https://www.youtube.com/watch?v=Ym2KmWeqd84)
 
 local-piper is a browser-based front-end for the text-to-speech (TTS) application called [Piper](https://github.com/rhasspy/piper). local-piper was built using Flask. It allows users to convert text into speech using various pre-trained voice models.
