@@ -13,11 +13,11 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 
 ## Features
 
-- Convert text input into spoken audio using selected voice models.
+- Convert text input into spoken audio directly using selected voice models.
 - Choose from a variety of voices available in the application.
 - Real-time feedback on the processing status of TTS commands.
-- Play generated audio directly in the browser.
-- Dark mode styling for comfortable viewing.
+- Store and play generated audio directly in the browser.
+- Options for direct to speaker-output (Speak), .wav file generation (Generate), or both (Both).
 
 ## Prerequisites/Installation and Setup
 
@@ -40,7 +40,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
    NAME.onnx
    NAME.onnx.json.
    ```
-   **You will note that [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0) does not provide names in this format and you will need to rename the files**g 
+   **You will note that [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0) does not provide names in this naming format and you will need to rename the files.** 
 
 
 ## Usage
@@ -61,17 +61,19 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 
 6. Monitor the processing status for feedback on the command execution.
 
-7. Listen to the generated audio using the embedded audio player.
+7. Listen to the generated audio through your speakers or by using the embedded audio player depending one which generation approach you selected.
 
 ## Additional Functionality
 
 - **Output Generations**: outputs are stored in ./static/output. The 5 most recent outputs are retain and stored with datetime name format. To change this you can edit MAX_FILES_TO_RETAIN in the the tts_handler.py file.
 
-- **Stopping the Server**: To stop the server, click the "Stop Server" button. This action requires appropriate authentication/authorization checks.
+- **Stopping the Server**: To stop the server, click the "Stop Server" button at the bottom of the page. Or press **ctrl+c** in the console. 
 
 - **Voice Selection**: The dropdown menu dynamically populates with available voice models retrieved from the server.
 
 - **Clear Text Box**: Use the "Clear Text Box" button to clear the text input area.
+
+- **App Icon Setup**: Files are included to help you set up the app to be run from the app menu should you choose to do so.
 
 ## Contributing
 
