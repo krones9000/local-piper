@@ -46,7 +46,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 
 ## Usage
 
-1. Run the Flask application:
+1. Run the Flask application by launching terminal in the local-piper directory or navigating to it with cd. Then run:
 
    ```bash
    gunicorn -b 127.0.0.1:5000 -w 4 app:app --timeout 600
