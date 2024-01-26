@@ -92,6 +92,14 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 
 Contributions are welcome! Feel free to open issues or submit pull requests for bug fixes, enhancements, or new features.
 
+## Acknowledgments
+
+This project makes use of the following third-party libraries and tools:
+
+- [Piper](https://github.com/rhasspy/piper)
+- [Hugging Face](https://huggingface.co/)
+- [Flask](https://flask.palletsprojects.com/)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
