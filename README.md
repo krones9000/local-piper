@@ -10,7 +10,7 @@
 
 ## [Voices can be downloaded from here.](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0)
 
-I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_US/libritts_r/medium)" voice model for a clear English speaking voice. See "*Prerequisites/Installation and Setup*" for voice model installation.
+I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_US/libritts_r/medium)" voice model for a clear English speaking voice. See "*[Prerequisites/Installation and Setup](https://github.com/krones9000/local-piper/blob/main/README.md#prerequisitesinstallation-and-setup)*" for voice model installation.
 
 ## Features
 
