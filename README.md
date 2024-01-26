@@ -17,15 +17,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 - Play generated audio directly in the browser.
 - Dark mode styling for comfortable viewing.
 
-## Prerequisites
-
-Before running the application, ensure you have the following installed:
-
-- Python 3.x
-- Flask
-- The "piper" TTS engine
-
-## Installation and Setup
+## Prerequisites/Installation and Setup
 
 1. Clone the repository to your local machine:
 
