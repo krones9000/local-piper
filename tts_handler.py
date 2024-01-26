@@ -19,7 +19,7 @@ def stream_audio(text, selected_voice):
     # Add a proper condition here if needed
     command = [
         "./piper/./piper",
-        "--cuda",
+#        "--cuda",
         "--model", model_path,
         "--output-raw"
     ]
@@ -42,7 +42,7 @@ def generate_output_file(text, selected_voice):
     output_file_path = os.path.join(OUTPUT_FOLDER, f"{current_datetime}.wav")
     command = [
         "./piper/./piper",
-        "--cuda",
+#        "--cuda",
         "--model", model_path,
         "--output_file", output_file_path
     ]
