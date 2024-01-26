@@ -47,8 +47,10 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 1. Run the Flask application:
 
    ```bash
-   gunicorn -b 127.0.0.1:5000 -w 4 --daemon app:app --timeout 600
+   gunicorn -b 127.0.0.1:5000 -w 4 app:app --timeout 600
    ```
+
+*A timeout instruction is given to avoid timeouts during long generations. You can adjust this if desired but you may encounter errors.*
 
 2. Access the application in your web browser at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
