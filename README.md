@@ -1,11 +1,10 @@
 # local-piper
-A simple program to use piper through a web browser interface. The code is not quite ready for primetime. But you can view a demo below.
 
-local-piper currently only supports Linux. However, I can't code and wrote this using LLMs so have at it. I'm sure you can figure it out!
+**local-piper** currently only supports **Linux**. However, I can't actually code. I wrote this using LLMs. So I'm sure you could figure out forking it for Windows if you wanted to!
 
 [![Click here to view a demo on YouTube.](https://img.youtube.com/vi/Ym2KmWeqd84/0.jpg)](https://www.youtube.com/watch?v=Ym2KmWeqd84)
 
-local-piper is a browser-based front-end for the text-to-speech (TTS) application called [Piper](https://github.com/rhasspy/piper). local-piper was built using Flask. It allows users to convert text into speech using various pre-trained voice models.
+**local-piper** is a browser-based front-end for the text-to-speech (TTS) application called [**Piper**](https://github.com/rhasspy/piper). **local-piper** was built using **Flask**. It allows users to convert text into speech using various pre-trained voice models.
 
 ## [Voices can be downloaded from here.](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0)
 
@@ -17,7 +16,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 - Choose from a variety of voices available in the application.
 - Real-time feedback on the processing status of TTS commands.
 - Store and play generated audio directly in the browser.
-- Options for direct to speaker-output (Speak), .wav file generation (Generate), or both (Both).
+- Options for direct to speaker-output (**Speak**), .wav file generation (**Generate**), or both (**Both**).
 
 ## Prerequisites/Installation and Setup
 
@@ -57,7 +56,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 
 4. Select a voice from the dropdown menu.
 
-5. Click the "Speak", "Generate", or "Both" button to initiate the TTS command.
+5. Click the "**Speak**", "**Generate**", or "**Both**" button to initiate the TTS command.
 
 6. Monitor the processing status for feedback on the command execution.
 
@@ -65,13 +64,13 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 
 ## Additional Functionality
 
-- **Output Generations**: outputs are stored in ./static/output. The 5 most recent outputs are retain and stored with datetime name format. To change this you can edit MAX_FILES_TO_RETAIN in the the tts_handler.py file.
+- **Output Generations**: outputs are stored in **./static/output**. The 5 most recent outputs are retain and stored with datetime name format. To change this you can edit **MAX_FILES_TO_RETAIN** in the the **tts_handler.py** file.
 
 - **Stopping the Server**: To stop the server, click the "Stop Server" button at the bottom of the page. Or press **ctrl+c** in the console. 
 
 - **Voice Selection**: The dropdown menu dynamically populates with available voice models retrieved from the server.
 
-- **Clear Text Box**: Use the "Clear Text Box" button to clear the text input area.
+- **Clear Text Box**: Use the "**Clear Text Box**" button to clear the text input area.
 
 - **App Icon Setup**: Files are included to help you set up the app to be run from the app menu should you choose to do so.
 
