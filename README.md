@@ -1,10 +1,10 @@
 # local-piper
 
-**local-piper** currently only supports **Linux**. However, I can't actually code. I wrote this using LLMs. So I'm sure you could figure out forking it for Windows if you wanted to!
+**local-piper** currently only supports **Linux** and uses the **2023.11.14-2 Linux x86_64 Piper release**. However, I can't actually code. I wrote this using LLMs. So I'm sure you could figure out forking it for Windows if you wanted to! Just make sure you choose the right Piper version for you and replace the files in **./Piper**. 
 
 [![Click here to view a demo on YouTube.](https://img.youtube.com/vi/Ym2KmWeqd84/0.jpg)](https://www.youtube.com/watch?v=Ym2KmWeqd84)
 
-**local-piper** is a browser-based front-end for the text-to-speech (TTS) application called [**Piper**](https://github.com/rhasspy/piper). **local-piper** was built using **Flask**. It allows users to convert text into speech using various pre-trained voice models.
+**local-piper** is a browser-based front-end for the local neural text to speech (TTS) system called [**Piper**](https://github.com/rhasspy/piper). **local-piper** was built using **Flask**. It allows users to convert text into speech using various pre-trained voice models.
 
 ## [Voices can be downloaded from here.](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0)
 
@@ -75,6 +75,18 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 - **Clear Text Box**: Use the "**Clear Text Box**" button to clear the text input area.
 
 - **App Icon Setup**: Files are included to help you set up the app to be run from the app menu should you choose to do so.
+
+## Things to note
+
+- **Streaming Parameters**: Streaming parameters are below. I used the one's from the **Piper** repo Readme, which states: "*This is raw audio and not a WAV file, so make sure your audio player is set to play 16-bit mono PCM samples at the correct sample rate for the voice.*" You could change them if you like by editting the line below in, **tts_handler.py**
+
+     ```
+     subprocess.run(f"echo {quoted_text} | {' '.join(command)} | aplay -r 22050 -f S16_LE -t raw -", shell=True)
+     ```
+
+- **CUDA**: There seems to be some issues with CUDA implementation in **Piper** at the moment and I honestly couldn't figure out if it's being used or not. It is commented out of **stream_audio** and **generate_output_file** in **tts_hander.py** by default but I have them both enabled and it doesn't cause issues whether they're *actually* working or not.
+
+- **Piper Release Versions**: This version is built using **piper_linux_x86_64.tar.gz** from the **[Piper Releases Page](https://github.com/rhasspy/piper/releases)** 
 
 ## Contributing
 
