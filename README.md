@@ -9,7 +9,7 @@ local-piper is a browser-based front-end for the text-to-speech (TTS) applicatio
 
 ## [Voices can be downloaded from here.](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0)
 
-I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_US/libritts_r/medium)" voice for a clear English speaking voice.
+I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0/en/en_US/libritts_r/medium)" voice model for a clear English speaking voice. See "*Prerequisites/Installation and Setup*" for voice model installation.
 
 ## Features
 
@@ -33,8 +33,8 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
    pip install -r requirements.txt
    ```
 
-3. Populate the *./static/voices* folder with your chosen voice files from [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0).
-   ## **You must have *.onnx* and *.json* files for any given voice. If these are not both present, the voice will not be available in the web app. Piper requires voices use the following format:**
+3. Populate the *./static/voices* folder with your chosen voice model files from [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0).
+   ## **You must have *.onnx* and *.json* files for any given voice. If these are not both present, the voice will not be available in the web app. Piper requires that voice models use the following format:**
 
    ```
    NAME.onnx
