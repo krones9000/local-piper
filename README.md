@@ -33,7 +33,15 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
    pip install -r requirements.txt
    ```
 
-3. Ensure the "piper" TTS engine is correctly installed and configured.
+3. Populate the *./static/voices* folder with your chosen voice files from [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0).
+   ## **You must have *.onnx* and *.json* files for any given voice. If these are not both present, the voice will not be available in the web app. Piper requires voices use the following format:**
+
+   ```
+   NAME.onnx
+   NAME.onnx.json.
+   ```
+   **You will note that [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0) does not provide names in this format and you will need to rename the files**g 
+
 
 ## Usage
 
