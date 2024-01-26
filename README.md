@@ -88,7 +88,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 
 - **CUDA**: There seems to be some issues with CUDA implementation in **Piper** at the moment and I honestly couldn't figure out if it's being used or not. It is commented out of **stream_audio** and **generate_output_file** in **tts_hander.py** by default but I have them both enabled and it doesn't cause issues whether they're *actually* working or not.
 
-- **Piper Release Versions**: This version is built using **piper_linux_x86_64.tar.gz** from the **[Piper Releases Page](https://github.com/rhasspy/piper/releases)** 
+- **Piper Release Versions**: This version is built using **piper_linux_x86_64.tar.gz** from the **[Piper Releases Page](https://github.com/rhasspy/piper/releases).** Make sure you have the appropriate version for your setting. 
 
 ## Contributing
 
