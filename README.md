@@ -68,7 +68,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 
 ## Additional Functionality
 
-- **Output Generations**: outputs are stored in **./static/output**. The 5 most recent outputs are retain and stored with datetime name format. To change this you can edit **MAX_FILES_TO_RETAIN** in the the **tts_handler.py** file.
+- **Output Generations**: outputs are stored in **./static/output**. The 5 most recent outputs are retained and stored with datetime name format. To change this you can edit **MAX_FILES_TO_RETAIN** in the the **tts_handler.py** file.
 
 - **Stopping the Server**: To stop the server, click the "Stop Server" button at the bottom of the page. Or press **ctrl+c** in the console. 
 
