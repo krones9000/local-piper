@@ -1,5 +1,7 @@
 # local-piper
 
+## This project is built around [**Piper**](https://github.com/rhasspy/piper).
+
 **local-piper** currently only supports **Linux** and uses the **2023.11.14-2 Linux x86_64 Piper release**. However, I can't actually code. I wrote this using LLMs. So I'm sure you could figure out forking it for **Windows** if you wanted to! Just make sure you choose the right Piper version for you and replace the files in **./Piper**. I'm primarily a **Linux** user and have no plans to port this project at present.
 
 [![Click here to view a demo on YouTube.](https://img.youtube.com/vi/Ym2KmWeqd84/0.jpg)](https://www.youtube.com/watch?v=Ym2KmWeqd84)
