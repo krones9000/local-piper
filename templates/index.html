@@ -24,11 +24,12 @@
     <form onsubmit="return false">
         <label for="text">Enter text to speak:</label>
         <div class="controls">
-            <button onclick="triggerSpeak()">Speak</button>
             <button onclick="triggerGenerate()">Generate</button>
+            <button onclick="triggerSpeak()">Speak</button>
             <button onclick="triggerBoth()">Both</button>
         </div>
-        <textarea id="text" name="text" required></textarea>
+        <textarea id="text" name="text" required oninput="updateCharacterCount(this)"></textarea>
+        <div id="charCount">Character count is 0 (5000 for Speak/Both, or 30000 for Generate, change in configuration.py).</div> <!-- Display character count here -->
         <div class="textControls">
     <button onclick="clearTextBox()">Clear Text Box</button>
     </div>
@@ -48,5 +49,3 @@
     </div>
 </body>
 </html>
-
-
