@@ -14,8 +14,10 @@ VOICES_FOLDER = "./static/voices/"
 OUTPUT_FOLDER = "./static/output/"
 
 # Maximum input length for text-to-speech conversion
-MAX_INPUT_LENGTH = 10000  # Adjust this value based on your requirements
+MAX_INPUT_LENGTH_GENERATE = 30000  # Adjust this value based on your requirements
+
+# Maximum input length for text-to-speech conversion
+MAX_INPUT_LENGTH_SPEAK = 5000  # Adjust this value based on your requirements
 
 # Number of output files to retain in the output folder
 MAX_FILES_TO_RETAIN = 5
-
