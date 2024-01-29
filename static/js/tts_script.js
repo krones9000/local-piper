@@ -194,4 +194,9 @@ function checkTTSStatus() {
     });
 }
 
-
+// character count
+function updateCharacterCount(textarea) {
+    var charCount = textarea.value.length;
+    var charCountDisplay = document.getElementById('charCount');
+    charCountDisplay.textContent = "Character count is " + charCount + " of your maximum characters (5000 for Speak/Both, or 30000 for Generate, change in configuration.py).";
+}
