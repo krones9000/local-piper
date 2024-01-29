@@ -8,7 +8,7 @@ This module contains the app/app routes.
 """
 
 from flask import Flask, request, render_template, jsonify
-from configuration import VOICES_FOLDER, MAX_INPUT_LENGTH, OUTPUT_FOLDER
+from configuration import VOICES_FOLDER, MAX_INPUT_LENGTH_GENERATE, MAX_INPUT_LENGTH_SPEAK, OUTPUT_FOLDER
 from tts_handler import stream_audio, generate_output_file
 import concurrent.futures
 import os
@@ -60,9 +60,18 @@ def tts_command():
     selected_voice = request.form.get('selected_voice')  # Update this line
     command = request.form.get('command')
 
-    # Check if the input text exceeds the maximum allowed length
-    if len(text) > MAX_INPUT_LENGTH:
-        return jsonify(status='error', message=f'Text input exceeds the maximum length of {MAX_INPUT_LENGTH} characters.')
+    # Check if the input text exceeds the maximum allowed length based on the command
+    if command == 'speak':
+        max_length = MAX_INPUT_LENGTH_SPEAK
+    elif command == 'generate':
+        max_length = MAX_INPUT_LENGTH_GENERATE
+    elif command == 'both':
+        max_length = MAX_INPUT_LENGTH_SPEAK
+    else:
+        return jsonify(status='error', message='Invalid command.')
+
+    if len(text) > max_length:
+        return jsonify(status='error', message=f'Text input is {len(text)} characters, which exceeds the maximum length of {max_length} characters.')
 
     if text and selected_voice:
         if command == 'speak':
