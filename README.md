@@ -25,10 +25,10 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your_username/local-piper.git
+   git clone https://github.com/krones9000/local-piper.git
    ```
 
-2. Install the required Python packages using pip:
+2. Install the required Python packages using pip (if you're on a brand new machine you may need to "sudo apt install python3 python3-pip" first):
 
    ```bash
    pip install -r requirements.txt
