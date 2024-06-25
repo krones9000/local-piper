@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=PiperWebApp
+GenericName=Piper
+Comment=Piper TTS Web App
+Icon=#"location/of/your/icon.png"
+Exec=#"python(orYourPythonVersion) /path/to/your/streamlitapp.py"
+Comment=Connect to My Server
+Encoding=UTF-8
+Terminal=true
+Type=Application
+Categories=Application
