@@ -51,7 +51,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
    streamlit run streamlit_app.py
    ```
 
-    once you've completed the steps below to configure the rest of your setup. In my case I had to restart for python/streamlit to work properly. **If you're on windows you'll need to look up how to install/call/run streamlit. I haven't done this but imagine it's not much different if you Google it.**
+    once you've completed the steps below to configure the rest of your setup. In my case I had to restart for python/streamlit to work properly. **If you're on windows you'll need to look up how to install/call/run streamlit. I haven't done this but imagine it's not much different if you Google it.** If using the Streamlit app via a shortcut/bash script, you may find that you need to alter the locations of your voices and output folders in the CONFIGURATION FILE.
 
 4. Populate the *./static/voices* folder with your chosen voice model files from [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0).
    ## **You must have *.onnx* and *.json* files for any given voice. If these are not both present, the voice will not be available in the web app. Piper requires that voice models use the following format:**
