@@ -13,6 +13,9 @@ VOICES_FOLDER = "./static/voices/"
 # Add the path to your voices folder
 OUTPUT_FOLDER = "./static/output/"
 
+# Add the path to your voices folder
+PIPER_LOCATION = "./piper/piper"
+
 # Maximum input length for text-to-speech conversion
 MAX_INPUT_LENGTH_GENERATE = 30000  # Adjust this value based on your requirements
 
