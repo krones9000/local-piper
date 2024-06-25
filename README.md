@@ -45,7 +45,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
    
    ```
    
-   The app can then be run using:
+   In my case, when I first tried to run the streamlit app, it told me what libraries I was missing. So there might be some others. But if you carry on below and read any error messages, they should point to any missing libraries you need to pip install. The streamlitapp can then be run using:
 
    ```bash
    streamlit run streamlit_app.py
