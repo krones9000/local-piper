@@ -110,7 +110,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
      subprocess.run(f"echo {quoted_text} | {' '.join(command)} | aplay -r 22050 -f S16_LE -t raw -", shell=True)
      ```
 
-- **CUDA**: There seems to be some issues with CUDA implementation in **Piper** at the moment and I honestly couldn't figure out if it's being used or not. It is commented out of **stream_audio** and **generate_output_file** in **tts_hander.py** by default but I have them both enabled and it doesn't cause issues whether they're *actually* working or not. Some commenters have suggested that Piper doesn't use CUDA even when told to. But honestly it runs so fast it's hard to tell either way.
+- **CUDA**: There seems to be some issues with CUDA implementation in **Piper** at the moment and I honestly couldn't figure out if it's being used or not. It is commented out of **stream_audio** and **generate_output_file** in **tts_hander.py** by default but I have them both enabled (and therefore allegedly I am using CUDA) and it doesn't cause _issues_, whether CUDA is *actually* working or not. Some commenters have suggested that Piper doesn't use CUDA even when told to do so. But honestly it runs so fast it's hard to tell either way.
 
 - **Piper Release Versions**: This version is built using **piper_linux_x86_64.tar.gz** from the **[Piper Releases Page](https://github.com/rhasspy/piper/releases).** Make sure you have the appropriate version for your setting. 
 
@@ -125,6 +125,7 @@ This project makes use of the following third-party libraries and tools:
 - [Piper](https://github.com/rhasspy/piper)
 - [Hugging Face](https://huggingface.co/)
 - [Flask](https://flask.palletsprojects.com/)
+- [Streamlit](https://streamlit.io/)
 
 ## License
 
