@@ -6,6 +6,6 @@ Icon=#"location/of/your/icon.png"
 Exec=#"python(orYourPythonVersion) /path/to/your/streamlitapp.py"
 Comment=Connect to My Server
 Encoding=UTF-8
-Terminal=true
+Terminal=false
 Type=Application
 Categories=Application
