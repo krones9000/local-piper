@@ -117,3 +117,4 @@ else:
 
 # Stop server button
 if st.button("Stop Server"):
+    stop_server()
