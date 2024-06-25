@@ -15,7 +15,15 @@ import concurrent.futures
 import shlex
 import subprocess
 from datetime import datetime
-from configuration import VOICES_FOLDER, MAX_INPUT_LENGTH_GENERATE, MAX_INPUT_LENGTH_SPEAK, OUTPUT_FOLDER, MAX_FILES_TO_RETAIN
+from configuration import VOICES_FOLDER, OUTPUT_FOLDER, PIPER_LOCATION, MAX_INPUT_LENGTH_GENERATE, MAX_INPUT_LENGTH_SPEAK, MAX_FILES_TO_RETAIN
+
+# Dynamically determine the script's directory
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Adjust paths relative to the script's directory
+VOICES_FOLDER = os.path.join(SCRIPT_DIR, VOICES_FOLDER)
+OUTPUT_FOLDER = os.path.join(SCRIPT_DIR, OUTPUT_FOLDER)
+PIPER_LOCATION = os.path.join(SCRIPT_DIR, PIPER_LOCATION)
 
 def get_most_recent_wav():
     current_files = sorted(os.listdir(OUTPUT_FOLDER), key=lambda x: datetime.strptime(x.split('.')[0], '%Y%m%d%H%M%S'), reverse=True)
@@ -45,7 +53,7 @@ def get_valid_voices():
 def stream_audio(text, selected_voice):
     model_path = f'"{VOICES_FOLDER}{selected_voice}"'
     command = [
-        "./piper/./piper",
+        PIPER_LOCATION,
         "--model", model_path,
         "--output-raw"
     ]
@@ -62,7 +70,7 @@ def generate_output_file(text, selected_voice):
     current_datetime = datetime.now().strftime('%Y%m%d%H%M%S')
     output_file_path = os.path.join(OUTPUT_FOLDER, f"{current_datetime}.wav")
     command = [
-        "./piper/./piper",
+        PIPER_LOCATION,
         "--model", model_path,
         "--output_file", output_file_path
     ]
