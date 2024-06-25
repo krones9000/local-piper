@@ -102,7 +102,7 @@ if st.button("Speak"):
     if len(text) <= MAX_INPUT_LENGTH_SPEAK:
         with concurrent.futures.ThreadPoolExecutor() as executor:
             executor.submit(stream_audio, text, selected_voice)
-        st.success("Speaking...")
+        st.success("Piper has spoken.")
     else:
         st.error(f"Text input exceeds the maximum length of {MAX_INPUT_LENGTH_SPEAK} characters.")
 
