@@ -2,7 +2,7 @@
 
 ## This project is built around [**Piper**](https://github.com/rhasspy/piper).
 
-**local-piper** currently only supports **Linux** (while [Piper](https://github.com/rhasspy/piper) itself supports quite a lot) and uses the **2023.11.14-2 Linux x86_64 Piper release**. However, I can't actually code. I wrote this using LLMs. So I'm sure you could figure out forking it for **Windows** if you wanted to! Just make sure you choose the right Piper version for you and replace the files in **./Piper**. I'm primarily a **Linux** user and have no plans to port this project at present.
+**local-piper** currently only supports **Linux** (while [Piper](https://github.com/rhasspy/piper) itself supports quite a lot) and uses the **2023.11.14-2 Linux x86_64 Piper release**. However, it shouldn't be too hard to fork it for **Windows** if you wanted to! Just make sure you choose the right Piper version from the main Piper branch for your OS and replace the files in **./Piper**. I'm primarily a **Linux** user and have no plans to port this project at present.
 
 **UPDATE:** I have added a Streamlit app file that can be used in place of the gunicorn server. This is not fully documented. I will update this page in future with some notes regarding the requirements for running the streamlit app.
 
