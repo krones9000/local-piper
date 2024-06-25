@@ -4,6 +4,8 @@
 
 **local-piper** currently only supports **Linux** (while [Piper](https://github.com/rhasspy/piper) itself supports quite a lot) and uses the **2023.11.14-2 Linux x86_64 Piper release**. However, I can't actually code. I wrote this using LLMs. So I'm sure you could figure out forking it for **Windows** if you wanted to! Just make sure you choose the right Piper version for you and replace the files in **./Piper**. I'm primarily a **Linux** user and have no plans to port this project at present.
 
+**UPDATE:** I have added a Streamlit app file that can be used in place of the gunicorn server. This is not fully documented. I will update this page in future with some notes regarding the requirements for running the streamlit app.
+
 [![Click here to view a demo on YouTube.](https://img.youtube.com/vi/1vKcDvCxcM4/0.jpg)](https://www.youtube.com/watch?v=1vKcDvCxcM4)
 
 **local-piper** is a browser-based front-end for the local neural text to speech (TTS) system called [**Piper**](https://github.com/rhasspy/piper). **local-piper** was built using **Flask**. It allows users to convert text into speech using various pre-trained voice models.
@@ -33,8 +35,25 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
    ```bash
    pip install -r requirements.txt
    ```
+   
+   If you want to run the streamlit app. You may also need to run:
 
-3. Populate the *./static/voices* folder with your chosen voice model files from [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0).
+   ```bash
+   sudo apt install streamlit
+   pip install streamlit
+   pip install psutil
+   
+   ```
+   
+   The app can then be run using:
+
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+    once you've completed the steps below to configure the rest of your setup. In my case I had to restart for python/streamlit to work properly. **If you're on windows you'll need to look up how to install/call/run streamlit. I haven't done this but imagine it's not much different if you Google it.**
+
+4. Populate the *./static/voices* folder with your chosen voice model files from [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0).
    ## **You must have *.onnx* and *.json* files for any given voice. If these are not both present, the voice will not be available in the web app. Piper requires that voice models use the following format:**
 
    ```
