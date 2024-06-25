@@ -76,7 +76,12 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 
 - **Clear Text Box**: Use the "**Clear Text Box**" button to clear the text input area.
 
-- **App Icon Setup**: Files are included to help you set up the app to be run from the app menu should you choose to do so.
+- **App Icon Setup**: A .desktop files is included to help you set up the app to be run from the streamlit app should you choose to do so. In terminal run "
+
+     ```
+     sudo nano /usr/share/applications/PiperWebApp.desktop
+     ```
+   and populate the file with the .desktop file contents provided, adjusting Icon and Exec to match your location.
 
 ## Things to note
 
@@ -86,7 +91,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
      subprocess.run(f"echo {quoted_text} | {' '.join(command)} | aplay -r 22050 -f S16_LE -t raw -", shell=True)
      ```
 
-- **CUDA**: There seems to be some issues with CUDA implementation in **Piper** at the moment and I honestly couldn't figure out if it's being used or not. It is commented out of **stream_audio** and **generate_output_file** in **tts_hander.py** by default but I have them both enabled and it doesn't cause issues whether they're *actually* working or not.
+- **CUDA**: There seems to be some issues with CUDA implementation in **Piper** at the moment and I honestly couldn't figure out if it's being used or not. It is commented out of **stream_audio** and **generate_output_file** in **tts_hander.py** by default but I have them both enabled and it doesn't cause issues whether they're *actually* working or not. Some commenters have suggested that Piper doesn't use CUDA even when told to. But honestly it runs so fast it's hard to tell either way.
 
 - **Piper Release Versions**: This version is built using **piper_linux_x86_64.tar.gz** from the **[Piper Releases Page](https://github.com/rhasspy/piper/releases).** Make sure you have the appropriate version for your setting. 
 
