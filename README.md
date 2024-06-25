@@ -6,9 +6,9 @@
 
 **UPDATE:** I have added a Streamlit app file that can be used in place of the gunicorn server. This is not fully documented. I will update this page in future with some notes regarding the requirements for running the streamlit app.
 
-[![Click here to view a demo on YouTube.](https://img.youtube.com/vi/D0QTzX-L7HU/0.jpg)](https://www.youtube.com/watch?v=D0QTzX-L7HU)
+[![Click here to view a demo of the Streamlit version on YouTube (a gunicorn video is also on my channel).](https://img.youtube.com/vi/D0QTzX-L7HU/0.jpg)](https://www.youtube.com/watch?v=D0QTzX-L7HU)
 
-**local-piper** is a browser-based front-end for the local neural text to speech (TTS) system called [**Piper**](https://github.com/rhasspy/piper). **local-piper** was built using **Flask**. It allows users to convert text into speech using various pre-trained voice models.
+**local-piper** is a browser-based front-end for the local neural text to speech (TTS) system called [**Piper**](https://github.com/rhasspy/piper). **local-piper** was built using **Flask**, but has now moved to **Streamlit**, the original files for both options remain. It allows users to convert text into speech using various pre-trained voice models.
 
 ## [Voices can be downloaded from here.](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0)
 
