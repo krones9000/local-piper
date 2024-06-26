@@ -58,7 +58,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 
    ```
    NAME.onnx
-   NAME.onnx.json.
+   NAME.onnx.json
    ```
    **You will note that [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0) does not provide names in this naming format and you will need to rename the files.** 
 
