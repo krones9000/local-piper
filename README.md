@@ -31,7 +31,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
    ```
    and add a "voices" and "output" folder within the "./static" folder.
    
-3. Install the required Python packages using pip (if you're on a brand new machine you may need to "sudo apt install python3 python3-pip" first):
+2. Install the required Python packages using pip (if you're on a brand new machine you may need to "sudo apt install python3 python3-pip" first):
 
    ```bash
    pip install -r requirements.txt
@@ -54,7 +54,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
 
     once you've completed the steps below to configure the rest of your setup. In my case I had to restart for python/streamlit to work properly. **If you're on windows you'll need to look up how to install/call/run streamlit. I haven't done this but imagine it's not much different if you Google it.** I have updated the configuration file to take account of how streamlit handles absolute/relative locations. I have not tested this in Windows. You may find that you need to alter the locations of your voices and output folders in the CONFIGURATION FILE.
 
-4. Populate the *./static/voices* folder with your chosen voice model files from [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0).
+3. Populate the *./static/voices* folder with your chosen voice model files from [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0).
    ## **You must have *.onnx* and *.json* files for any given voice. If these are not both present, the voice will not be available in the web app. Piper requires that voice models use the following format:**
 
    ```
@@ -63,7 +63,7 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
    ```
    **You will note that [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0) does not provide names in this naming format and you will need to rename the files.**
 
-5. Remove the files for either the html or streamlit depending on which you prefer to use.
+4. Remove the files for either the html or streamlit depending on which you prefer to use.
 
 
 ## Usage
