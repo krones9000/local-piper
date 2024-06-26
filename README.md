@@ -29,8 +29,9 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
    ```bash
    git clone https://github.com/krones9000/local-piper.git
    ```
-
-2. Install the required Python packages using pip (if you're on a brand new machine you may need to "sudo apt install python3 python3-pip" first):
+   and add a "voices" and "output" folder within the "./static" folder.
+   
+3. Install the required Python packages using pip (if you're on a brand new machine you may need to "sudo apt install python3 python3-pip" first):
 
    ```bash
    pip install -r requirements.txt
@@ -60,7 +61,9 @@ I would recommend the "[en_US-libritts_r-medium](https://huggingface.co/rhasspy/
    NAME.onnx
    NAME.onnx.json
    ```
-   **You will note that [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0) does not provide names in this naming format and you will need to rename the files.** 
+   **You will note that [huggingface](https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0) does not provide names in this naming format and you will need to rename the files.**
+
+5. Remove the files for either the html or streamlit depending on which you prefer to use.
 
 
 ## Usage
